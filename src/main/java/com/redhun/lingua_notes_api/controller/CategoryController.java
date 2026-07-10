@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/api/categories")
 public class CategoryController {
 
-    @Autowired
+@Autowired
     private CategoryService categoryService;
 
     @PostMapping

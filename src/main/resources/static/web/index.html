@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot + NGINX</title>
+</head>
+
+<body>
+
+<h1>Welcome</h1>
+
+<button onclick="loadData()">Call API</button>
+
+<pre id="result"></pre>
+
+<script>
+
+    function loadData(){
+
+    fetch('/api/categories')
+
+    .then(res=>res.text())
+
+    .then(data=>{
+
+    document.getElementById("result").innerHTML=data;
+
+    });
+
+    }
+
+</script>
+
+</body>
+</html>
