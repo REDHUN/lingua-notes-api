@@ -11,6 +11,6 @@
 
         private String description;
 
-        private String icon;
+
 
     }

@@ -10,7 +10,7 @@ public class CategoryMapper {
         Category category = new Category();
         category.setName(request.getName());
         category.setDescription(request.getDescription());
-        category.setIcon(request.getIcon());
+
         return category;
     }
 
@@ -19,13 +19,13 @@ public class CategoryMapper {
         response.setId(category.getId());
         response.setName(category.getName());
         response.setDescription(category.getDescription());
-        response.setIcon(category.getIcon());
+
         return response;
     }
 
     public static void updateEntity(Category category, CategoryRequest request) {
         category.setName(request.getName());
         category.setDescription(request.getDescription());
-        category.setIcon(request.getIcon());
+
     }
 }
