@@ -51,4 +51,5 @@ public class PatterMapper {
         pattern.setNotes(request.getNotes());
 
     }
+
 }

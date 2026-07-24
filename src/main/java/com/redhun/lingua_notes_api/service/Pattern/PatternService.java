@@ -17,4 +17,6 @@ public interface PatternService {
     PatternResponse findPatternById(Long id);
 
     void deletePattern(Long id);
+
+List<PatternResponse>findPatternsByCategoryId(Long id);
 }

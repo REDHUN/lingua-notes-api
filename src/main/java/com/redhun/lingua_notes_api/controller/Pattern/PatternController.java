@@ -38,4 +38,9 @@ public class PatternController {
     public void  deletePattern(@PathVariable Long id){
          patternService.deletePattern(id);
     }
+    @GetMapping("/category/{categoryId}")
+    public List<PatternResponse> getPatternByCategoryId(@PathVariable Long categoryId){
+        return patternService.findPatternsByCategoryId(categoryId);
+    }
+
 }
